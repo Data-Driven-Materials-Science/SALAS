@@ -1,2 +1,7 @@
 # Satellite_Detection_Add-on
-Supporting Github Repository for "Automated and Refined Application of Convolutional Neural Network Modeling to Metallic Powder Particle Satellite Detection" Manuscript
+Supporting Github Repository for "Automated and Refined Application of Convolutional Neural Network Modeling to Metallic Powder Particle Satellite Detection" Article.
+
+This repository contains 3 Sections: "SEM", "examples", and "data". 
+ * The SEM folder contains copies of all (unaugmented) Scanning Electron Microscope (SEM) micrographs that were implemented and used in the corresponding article. These images are all in .png format held at a constant resolution of 1024x768 resoltuion. 
+ * The examples folder contains examples for code to implement new features elaborated upon in the corresponding article. These features include, converting predictions to annotations and exporting them, comparing image segmentations to ground truth data at a pixel level, quantifying performance imporvements over time by comparing multiple models performances at the same time, as well as interpretting calculated performance data into graphs that are easier to understand. It is important to note, these are add-on features to the orignial AMPIS framework. Installation instructions, as well as instructions on training and evaluating a model, can be found here: https://github.com/rccohn/AMPIS.
+ * The data folder contains segmentation results of the final model as well as the validation set used in the corresponding paper. These results can be compared to the ground-truth answers in the validation set recieve the same performance scores detailed within the article. 
