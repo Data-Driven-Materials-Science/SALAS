@@ -9,33 +9,45 @@ First you want to install anaconda and git if you don’t have it
 Clone git repository
  * git clone https://github.com/rccohn/AMPIS.git
  * cd AMPIS
+
 Setup Virtual Environment
  * python3 -m venv ampis_env
  * source ampis_env/bin/activate
+
 Install Requirements File
  * pip install wheel
  * pip install -r requirements.txt
+
 Installing additional requirements not accounted for
  * sudo apt install build-essential
  * conda install gcc_linux-64 
  * sudo apt-get install python3.8-dev
+
 Installing COCO Python API
  * pip install pycocotools
+
 Sometimes, the above doesn’t work so if that is the case, try the following
  * pip install git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI
+
 Installing PyTorch and TorchVision
  * pip install torch==1.5.0+cu101 torchvision==0.6.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+
 Sometimes, the above doesn’t work so if that is the case, try the following
  * TMPDIR=/var/tmp pip install torch torchvision torchaudio
+
 Installing Requirements
  * python -m pip install -U scikit-image
  * pip install seaborn
+
 Installing Detectron2
  * python -m pip install detectron2 -f \ https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.8/index.html
+
 Sometimes, the above doesn’t work so if that is the case, try the following
  * python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+
 Installing AMPIS
  * pip install -e .
+
 Verifying installation
 Open a python window in the terminal and try the following. If there are no errors, installation was completed properly
 
