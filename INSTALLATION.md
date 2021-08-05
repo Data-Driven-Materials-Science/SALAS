@@ -6,52 +6,77 @@ First you want to install anaconda and git if you don’t have it
  * bash Anaconda3-2020.11-Linux-x86_64.sh
  * conda install -c anaconda git
 
-Clone git repository
- * git clone https://github.com/rccohn/AMPIS.git
+### Clone git repository
+```bash
+ * git clone https://github.com/Data-Driven-Materials-Science/Satellite_Detection_Refinement.git
  * cd AMPIS
+```
 
-Setup Virtual Environment
+### Setup Virtual Environment
+```bash
  * python3 -m venv ampis_env
  * source ampis_env/bin/activate
+```
 
-Install Requirements File
+### Install Requirements File
+```bash
  * pip install wheel
  * pip install -r requirements.txt
+```
 
-Installing additional requirements not accounted for
+### Installing additional requirements not accounted for
+```bash
  * sudo apt install build-essential
  * conda install gcc_linux-64 
  * sudo apt-get install python3.8-dev
+```
 
-Installing COCO Python API
+### Installing COCO Python API
+```bash
  * pip install pycocotools
+```
 
-Sometimes, the above doesn’t work so if that is the case, try the following
+### Sometimes, the above doesn’t work so if that is the case, try the following
+```bash
  * pip install git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI
+```
 
-Installing PyTorch and TorchVision
+### Installing PyTorch and TorchVision
+```bash
  * pip install torch==1.5.0+cu101 torchvision==0.6.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+```
 
-Sometimes, the above doesn’t work so if that is the case, try the following
+### Sometimes, the above doesn’t work so if that is the case, try the following
+```bash
  * TMPDIR=/var/tmp pip install torch torchvision torchaudio
+```
 
-Installing Requirements
+### Installing Requirements
+```bash
  * python -m pip install -U scikit-image
  * pip install seaborn
+ * pip install imantics 
+```
 
-Installing Detectron2
+### Installing Detectron2
+```bash
  * python -m pip install detectron2 -f \ https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.8/index.html
+```
 
-Sometimes, the above doesn’t work so if that is the case, try the following
+### Sometimes, the above doesn’t work so if that is the case, try the following
+```bash
  * python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+```
 
-Installing AMPIS
+### Installing AMPIS
+```bash
  * pip install -e .
+```
 
-Verifying installation
-Open a python window in the terminal and try the following. If there are no errors, installation was completed properly
-
+### Open a python window in the terminal and try the following. If there are no errors, installation was completed properly
+```bash
 import pycocotools
 import torch
 import detectron2
 import ampis
+```
