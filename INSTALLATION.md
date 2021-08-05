@@ -4,32 +4,46 @@ To properly install and run the code, there are a couple requirements. This code
 ### First you want to install anaconda and git if you don’t have it
 ```bash
 wget https://repo.continuum.io/archive/Anaconda3-2020.11-Linux-x86_64.sh
+```
+```bash
 bash Anaconda3-2020.11-Linux-x86_64.sh
+```
+```bash
 conda install -c anaconda git
 ```
 
 ### Clone git repository
 ```bash
 git clone https://github.com/Data-Driven-Materials-Science/Satellite_Detection_Refinement.git
+```
+```bash
 cd AMPIS
 ```
 
 ### Setup Virtual Environment
 ```bash
 python3 -m venv ampis_env
+```
+```bash
 source ampis_env/bin/activate
 ```
 
 ### Install Requirements File
 ```bash
 pip install wheel
+```
+```bash
 pip install -r requirements.txt
 ```
 
 ### Installing additional requirements not accounted for
 ```bash
 sudo apt install build-essential
+```
+```bash
 conda install gcc_linux-64 
+```
+```bash
 sudo apt-get install python3.8-dev
 ```
 
@@ -56,7 +70,11 @@ TMPDIR=/var/tmp pip install torch torchvision torchaudio
 ### Installing Requirements
 ```bash
 python -m pip install -U scikit-image
+```
+```bash
 pip install seaborn
+```
+```bash
 pip install imantics 
 ```
 
