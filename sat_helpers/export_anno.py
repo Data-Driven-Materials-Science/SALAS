@@ -11,8 +11,9 @@ sys.path.append(str(ampis_root))
 
 from ampis import data_utils
 
-'''CURRENT PROBLEM: This can make polygon shapes with only 2 points, and those break the training'''
-
+#This is purely a test of method usage.
+def have_fun():
+    print("Having Fun!")
 
 #This is used to take detectron2 Tensor output, and convert them into polygon annotation
 #Takes image path and output of detectron2 predictor
