@@ -1,4 +1,4 @@
-# Satellite_Detection_Refinement
+# SALAS (Satellite Auto-Labeling And Segmentation)
 Supporting Github Repository for "Automated and Refined Application of Convolutional Neural Network Modeling to Metallic Powder Particle Satellite Detection" Article.
 
 This repository contains 3 sections: "sat_helpers", "data", and "examples"
