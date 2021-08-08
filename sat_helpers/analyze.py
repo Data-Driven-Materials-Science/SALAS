@@ -13,7 +13,7 @@ import torch
 
 from detectron2.structures import Instances
 
-from structures import InstanceSet, RLEMasks, masks_to_rle, masks_to_bitmask_array
+from .structures import InstanceSet, RLEMasks, masks_to_rle, masks_to_bitmask_array
 
 
 def align_instance_sets(a, b):

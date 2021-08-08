@@ -1,6 +1,7 @@
 # Satellite Detection Framework Installation Guide:
 Note:
-To properly install and run the code, there are a couple requirements. This code must be run on a native Linux or mac environment, there must be access to a GPU, and that GPU must not be an NVIDIA Tesla K40. There may be other GPUs that do not work, but that one definitively does not. To perform the installation, you must have access to a terminal AND have sudo permission. Additionally, the example code is stored as a jupyter notebook. 
+ * To properly install and run the code, there are a couple requirements. This code must be run on a native Linux or mac environment, there must be access to a GPU, and that GPU must not be an NVIDIA Tesla K40. There may be other GPUs that do not work, but that one definitively does not. To perform the installation, you must have access to a terminal AND have sudo permission. Additionally, the example code is stored as a jupyter notebook. 
+ * This installation process is NOT complete. 
 ### First you want to install anaconda and git if you don’t have it
 ```bash
 wget https://repo.continuum.io/archive/Anaconda3-2020.11-Linux-x86_64.sh
@@ -14,18 +15,18 @@ conda install -c anaconda git
 
 ### Clone git repository
 ```bash
-git clone https://github.com/Data-Driven-Materials-Science/Satellite_Detection_Refinement.git
+https://github.com/Data-Driven-Materials-Science/SALAS
 ```
 ```bash
-cd AMPIS
+cd SALAS
 ```
 
 ### Setup Virtual Environment
 ```bash
-python3 -m venv ampis_env
+python3 -m venv salas_env
 ```
 ```bash
-source ampis_env/bin/activate
+source salas_env/bin/activate
 ```
 
 ### Install Requirements File
