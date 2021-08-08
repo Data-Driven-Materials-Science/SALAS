@@ -2,7 +2,7 @@
 Note:
  * To properly install and run the code, there are a couple requirements. This code must be run on a native Linux or mac environment, there must be access to a GPU, and that GPU must not be an NVIDIA Tesla K40. There may be other GPUs that do not work, but that one definitively does not. To perform the installation, you must have access to a terminal AND have sudo permission. Additionally, the example code is stored as a jupyter notebook. 
  * This installation process is NOT complete. 
-### First you want to install anaconda and git if you don’t have it
+## First you want to install anaconda and git if you don’t have it
 ```bash
 wget https://repo.continuum.io/archive/Anaconda3-2020.11-Linux-x86_64.sh
 ```
@@ -13,7 +13,7 @@ bash Anaconda3-2020.11-Linux-x86_64.sh
 conda install -c anaconda git
 ```
 
-### Clone git repository
+## Clone git repository
 ```bash
 https://github.com/Data-Driven-Materials-Science/SALAS
 ```
@@ -21,7 +21,7 @@ https://github.com/Data-Driven-Materials-Science/SALAS
 cd SALAS
 ```
 
-### Setup Virtual Environment
+## Setup Virtual Environment
 ```bash
 python3 -m venv salas_env
 ```
@@ -29,7 +29,7 @@ python3 -m venv salas_env
 source salas_env/bin/activate
 ```
 
-### Install Requirements File
+## Install Requirements File
 ```bash
 pip install wheel
 ```
@@ -37,7 +37,7 @@ pip install wheel
 pip install -r requirements.txt
 ```
 
-### Installing additional requirements not accounted for
+## Installing additional requirements not accounted for
 ```bash
 sudo apt install build-essential
 ```
@@ -48,7 +48,7 @@ conda install gcc_linux-64
 sudo apt-get install python3.8-dev
 ```
 
-### Installing COCO Python API
+## Installing COCO Python API
 ```bash
 pip install pycocotools
 ```
@@ -58,7 +58,7 @@ pip install pycocotools
 pip install git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI
 ```
 
-### Installing PyTorch and TorchVision
+## Installing PyTorch and TorchVision
 ```bash
 pip install torch==1.5.0+cu101 torchvision==0.6.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
 ```
@@ -68,7 +68,7 @@ pip install torch==1.5.0+cu101 torchvision==0.6.0+cu101 -f https://download.pyto
 TMPDIR=/var/tmp pip install torch torchvision torchaudio
 ```
 
-### Installing Requirements
+## Installing Requirements
 ```bash
 python -m pip install -U scikit-image
 ```
@@ -81,7 +81,7 @@ pip install imantics
 ```bash
 pip install skimage
 ```
-### Installing Detectron2
+## Installing Detectron2
 ```bash
 python -m pip install detectron2 -f \ https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.8/index.html
 ```
