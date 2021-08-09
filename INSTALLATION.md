@@ -2,6 +2,7 @@
 Note:
  * To properly install and run the code, there are a couple requirements. This code must be run on a native Linux or mac environment, there must be access to a GPU, and that GPU must not be an NVIDIA Tesla K40. There may be other GPUs that do not work, but that one definitively does not. To perform the installation, you must have access to a terminal AND have sudo permission. Additionally, the example code is stored as a jupyter notebook. 
  * This installation process is NOT complete. 
+ * There appears to be an issue with cuda being incompatible such that upon final installation, it doesn't run
 ## First you want to install anaconda and git if you don’t have it
 ```bash
 wget https://repo.continuum.io/archive/Anaconda3-2020.11-Linux-x86_64.sh
@@ -63,7 +64,7 @@ pip install git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAP
 pip install torch==1.5.0+cu101 torchvision==0.6.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
-### Sometimes, the above doesn’t work so if that is the case, try the following
+### Sometimes, the above doesn’t work. If you recieve the error "[Errno 28] No space left on device", try the following
 ```bash
 TMPDIR=/var/tmp pip install torch torchvision torchaudio
 ```
@@ -79,7 +80,7 @@ pip install seaborn
 pip install imantics 
 ```
 ```bash
-pip install skimage
+python -m pip install -U scikit-image
 ```
 ## Installing Detectron2
 ```bash
