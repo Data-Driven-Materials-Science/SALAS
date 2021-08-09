@@ -15,7 +15,7 @@ conda install -c anaconda git
 
 ## Clone git repository
 ```bash
-https://github.com/Data-Driven-Materials-Science/SALAS
+git clone https://github.com/Data-Driven-Materials-Science/SALAS
 ```
 ```bash
 cd SALAS
@@ -39,13 +39,13 @@ pip install -r requirements.txt
 
 ## Installing additional requirements not accounted for
 ```bash
-sudo apt install build-essential
+[No longer recommending] sudo apt install build-essential
 ```
 ```bash
 conda install gcc_linux-64 
 ```
 ```bash
-sudo apt-get install python3.8-dev
+[No longer recommending] sudo apt-get install python3.8-dev
 ```
 
 ## Installing COCO Python API
