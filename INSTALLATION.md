@@ -66,7 +66,7 @@ pip install torch==1.5.0+cu101 torchvision==0.6.0+cu101 -f https://download.pyto
 
 ### Sometimes, the above doesn’t work. If you recieve the error "[Errno 28] No space left on device", try the following
 ```bash
-TMPDIR=/var/tmp pip install torch torchvision torchaudio
+TMPDIR=/var/tmp pip install torch==1.8.1+cu102 torchvision==0.9.1+cu102 torchaudio==0.8.1 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html
 ```
 
 ## Installing Requirements
@@ -91,7 +91,7 @@ python -m pip install detectron2 -f \ https://dl.fbaipublicfiles.com/detectron2/
 ```bash
 python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 ```
-
+### If you experiece other issues, they can be solved [here](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md#common-installation-issues)
 ### Installing AMPIS
 ```bash
 pip install -e .
@@ -102,5 +102,6 @@ pip install -e .
 import pycocotools
 import torch
 import detectron2
-import ampis
+import sat_helpers
 ```
+
