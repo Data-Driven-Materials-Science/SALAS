@@ -1,6 +1,6 @@
 # Satellite Detection Framework Installation Guide:
 Note:
- * To properly install and run the code, there are a couple requirements. This code must be run on a native Linux or mac environment, there must be access to a GPU, and that GPU must not be an NVIDIA Tesla K40. There may be other GPUs that do not work, but that one definitively does not. To perform the installation, you must have access to a terminal AND have sudo permission. Additionally, the example code is stored as a jupyter notebook. 
+ * To properly install and run the code, there are a couple requirements. This code must be run on a native Linux or mac environment, there must be access to a GPU, and that GPU must not be an NVIDIA Tesla K40. There may be other GPUs that do not work, but that one definitively does not. To perform the installation, you must have access to a terminal AND have sudo permission however conda is a working alternative for not having sudo priviledges. Additionally, the example code is stored as a jupyter notebook. 
 ## First you want to install anaconda and git if you don’t have it
 ```bash
 wget https://repo.continuum.io/archive/Anaconda3-2020.11-Linux-x86_64.sh
